@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="row">
+            <div id="taco1" class="item taco active">🌮</div>
+            <div id="taco2" class="item taco">🌮</div>
+            <div id="taco3" class="item taco">🌮</div>
+        </div>
+    </div>
+    /*<!--Connect your script here-->*/
+    <script>
+        
+    </script>
+    <script type="text/javascript">
+        console.log("Hello World");
+        let firstTaco = document.querySelector('#taco1')
+        firstTaco.addEventListener('click', e => {
+            console.log("first taco clicked!")
+            firstTaco.classList.toggle('active')
+        })
+        let secondTaco = document.querySelector('#taco2')
+        secondTaco.addEventListener('click', e => {
+            console.log("second taco clicked!")
+            secondTaco.classList.toggle('active')
+        })
+        let thirdTaco = document.querySelector('#taco3')
+        thirdTaco.addEventListener('click', e => {
+            console.log("third taco clicked!")
+            thirdTaco.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
